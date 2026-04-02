@@ -76,6 +76,7 @@ func (m *Manager) Start(name, cmd, workDir string) error {
 		proc = exec.Command("sh", "-c", cmd)
 	}
 	proc.Dir = workDir
+	hideWindow(proc)
 
 	// Pipe stdout/stderr to a log file
 	var logFile *os.File

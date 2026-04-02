@@ -3,9 +3,14 @@
 package process
 
 import (
+	"os/exec"
 	"syscall"
 	"time"
 )
+
+func hideWindow(cmd *exec.Cmd) {
+	// No-op on Unix
+}
 
 func killProcessTree(pid int) error {
 	// Send SIGTERM to process group
