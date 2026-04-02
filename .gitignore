@@ -1,0 +1,8 @@
+node_modules/
+build/bin/
+frontend/dist/
+.superpowers/
+*.exe
+
+# Frontend build cache
+frontend/node_modules/
